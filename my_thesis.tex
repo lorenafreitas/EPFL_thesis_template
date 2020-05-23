@@ -20,11 +20,11 @@
 \setlength{\parskip}{0pt} %(needs to be before titlepage and frontmatter to keep the table of contents lists short)
 \frontmatter
 \input{head/titlepage.tex}
-\include{head/dedication}
+%\include{head/dedication}
 \setcounter{page}{0}
-\include{head/acknowledgements}
-\include{head/preface}
-\include{head/abstracts}
+%\include{head/acknowledgements}
+%\include{head/preface}
+%\include{head/abstracts}
 
 \cleardoublepage
 \pdfbookmark{\contentsname}{toc}
@@ -54,12 +54,21 @@
 \mainmatter
 \include{main/ch1_introduction}
 \cleardoublepage
-\part{Body 1}
+%\part{Body 1}
+\include{main/ch2_background}
+\cleardoublepage
+%\part{Body 1}
 \include{main/ch2_figures_tables}
 \cleardoublepage
-\part{Body 2}
-\include{main/ch3_math}
-\include{main/ch4_more_text}
+%\part{Body 2}
+\include{main/ch3_BOLDvar}
+\cleardoublepage
+\include{main/ch4_ORFi}
+\cleardoublepage
+\include{main/ch5_PPI_CAPs}
+\cleardoublepage
+\include{main/ch6_FuturePerspectives}
+\cleardoublepage
 
 % use to end the last part if the thesis is composed of parts
 \addtocontents{toc}{\vspace{\normalbaselineskip}}
