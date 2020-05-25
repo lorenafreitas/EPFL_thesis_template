@@ -40,7 +40,7 @@ To construct conventional seed connectivity, a general linear model (GLM) is put
 \label{eqn:ppa_glm}
   V(t) & =& \beta S(t) + \varepsilon(t),
 \end{eqnarray}
-where $\beta$ is the parameter weight (i.e., functional connectivity) and $\varepsilon(t)$ is the residual and assumed to be a realization of the noise with $E[\varepsilon]=0$ and  $E[\varepsilon^2]=\sigma^2$. In addition, we assume the noise to be independent from the seed voxel activity; i.e., $E[S\cdot \varepsilon]=0$. Multiplying both sides of Eq.~(\ref{eqn:ppa_glm}) with $S(t)$ and taking the expectation leads to:
+where $\beta$ is the parameter weight (i.e., functional connectivity) and $\varepsilon(t)$ is the residual and assumed to be a realization of the noise with $E[\varepsilon]=0$ and  $E[\varepsilon^2]=\sigma^2$. In addition, we assume the noise to be independent from the seed voxel activity; i.e., $E[S\cdot \varepsilon]=0$. Multiplying both sides of \ref{eqn:ppa_glm} with $S(t)$ and taking the expectation leads to:
 \begin{eqnarray}
    E[ V  \cdot S ]  & = & \beta E[S^2] + E[S \cdot \varepsilon],
 \end{eqnarray}
@@ -52,8 +52,8 @@ To obtain the stationary map in the CAPs approach, we want the expectation value
           &=& E[\beta S + \varepsilon : S>\phi] \\
           &=& \beta E[S : S>\phi] + E[\varepsilon  : S>\phi],    \label{eqn:ppa-proof}
 \end{eqnarray}
-where in the first step we have substituted the previous GLM of Eq.~(\ref{eqn:ppa_glm}) and ``$:$" implies conditioning.
-Due to the independence of noise and seed voxel, and $E[\varepsilon]=0$, the second term of Eq.~(\ref{eqn:ppa-proof}) will vanish, and we obtain
+where in the first step we have substituted the previous GLM of \ref{eqn:ppa_glm} and ``$:$" implies conditioning.
+Due to the independence of noise and seed voxel, and $E[\varepsilon]=0$, the second term of \ref{eqn:ppa-proof} will vanish, and we obtain
 \begin{equation}
  I_\text{CAP+} = \beta E[S : S > \phi],
 \end{equation}
@@ -191,13 +191,12 @@ This brief derivation also shows that the stationary PPI-CAP can be contaminated
 % --------------------------------------------------------------------------
 
 
-\begin{figure*}[h]
+\begin{sidewaysfigure*}[h]
 \centering
-\includegraphics[width=1\textwidth]{images/Appendix/ACCK6_stats_permutation2.png}
-\vspace{5mm}
+\includegraphics[width=1\textwidth]{images/Appendix/Ch5_ACC_stats.png}
 \caption{\textbf{Statistical assessment of each PPI-CAP's effects.} To check whether the effects identified in Figure \ref{fig:acc_cm} are significant, we performed permutation testing by shuffling the corresponding effect's labels 3000 times and calculating the det-index in each case, to generate a null distribution. We then check where the real data's det-index lies within this distribution and calculate the p-value. }
 \label{fig:app_acc_stats}
-\end{figure*}
+\end{sidewaysfigure*}
 
 
 
