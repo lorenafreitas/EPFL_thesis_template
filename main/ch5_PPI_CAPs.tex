@@ -381,8 +381,8 @@ If a PPI-CAP has a strong main or interaction effect, the polarity of the frames
 For this study, we performed 3000 random permutations for each test. We disclose the null distributions and uncorrected p-values in the Supplementary Figures for this chapter and, in the Results Section, indicate  effects with significance level $\alpha$ \textsubscript{$0.05/6$} = 0.008), to correct for the number of PPI-CAPs.
 
 
-
-
+\subsubsection{Investigation of seed heterogeneity}
+Finally, we investigated the source of the seed activity to test how heterogeneous the seed was. To this end, we clustered the seed's voxelwise time courses --- signed after z-scoring --- into three subgroups. We then projected these groups back onto the brain to identify possible subdivisions of the seed and to better understand where the averaged signal likely came from. 
 
 
 
@@ -432,7 +432,16 @@ All the PPI-CAPs showed a significant seed effect at $p~<~0.001$ (Figure \ref{fi
 PPI-CAPs 1, 3, and 6 show  a positive interaction between seed and task (PPI effect), meaning that these patterns correlate with the seed more during Movie Watching and are anti-correlated with the ACC during  Emotion Regulation (all, $p~<~0.001$). In contrast, PPI-CAPs 2 and 4 show a negative PPI effect, such that they correlate more with the seed during Emotion Regulation (all, $p~<~0.001$). PPI-CAPs 1 ($p~<~0.001$), 3 ($p~=~0.002$), 5 ($p~<~0.001$) and 6 ($p~<~0.001$) have a positive group versus task interaction, such that during Movie Watching, the regions shown in red for these patterns are more often activated in controls than in preterms, while during Emotion Regulation these regions are also more often de-activated for this group. Finally, PPI-CAP 2 has a positive group versus seed interaction effect ($p~<~0.001$), while PPI-CAPs 1 ($p~<~0.001$), 4 ($p~=~0.003$), 5 ($p~<~0.001$), and 6 ($p~<~0.001$) have a negative group versus seed interaction effect.
 
 
+\subsubsection{Seed heterogeneity}
+Clustering the seed's voxels' based on their signed time courses revealed three clear spatial subdivisions. The averaged seed activation seems to come mainly from subdivisions one and two, with subdivision three having a temporal pattern that resembled the former less. Figure \ref{fig:acc_subdivisions} illustrates this result. 
 
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=1\textwidth]{images/Ch5/Ch5_ACC_subdivisions.png}
+\caption{\textbf{ACC-seed subdivisions based on temporal activity.} Temporally clustering the voxelwise seed activity's sign (large rectangle) across all subjects yielded three spatial subdivisions of the dorsal anterior cingulate cortex, indicated in green, yellow and red in the brain plot. The activity of voxels within regions one and  two (as indicated by the top two layers of the large rectangle) resembled more closely and thus seem to be driving the seed's averaged signal (top rectangle). }
+\label{fig:acc_subdivisions}
+\end{figure*}
 
 
 
@@ -445,6 +454,8 @@ Our exploration of ACC-based connectivity patterns revealed several reproducible
 Only one PPI-CAP had a pure group effect close to significance. This was PPI-CAP 1, with somatomotor (SMN) areas being more highly active, while the default mode network (DMN) was deactive, in preterm-born children throughout the experiment. In addition, the group versus polarity effect indicates that it appears more often when this group is performing the movie watching task (note the darker colours on the right side of the corresponding confusion matrix in Figure \ref{fig:acc_cm}). In typically developing individuals, motor stimulation is related to contralateral activation of the motor cortex. Furthermore, not only physical stimulation, but even just the act of watching someone else move, or of imagining oneself moving, already generates similar activation \citep{Butler2006}. Studies involving somatomotor stimulation in preterm-born infants, however, have often found bilateral (as opposed to only contralateral) activation of the motor cortex in response to unilateral stimulation \citep{Heep2009a,Arichi2010,Allievi2016}. Many of the the videos shown during Movie Watching blocks involve high movement such as sports scenes of families playing football. Taken together, the above facts may justify not only the occasional appearance of motor-related areas during this experiment, but also why it appears more for the preterm group. Further analyses based on transients \citep{Karahanoglu2015a,Freitas2020} would help to disentangle the spatiotemporal overlapping of the different regions included in the PPI-CAP in this case.
 
 Interestingly, PPI-CAP 6, which includes the limbic network (LN) and the dorsal attention network (DAN) with opposite signs, shows both a group versus task and a group versus seed interaction effects. In controls, the LN is more often active when movie watching than during emotional regulation, while the opposite is true for the preterm group. It is also more deactivated (and the DAN activated) when the preterm are movie watching. These results are in line with previous results which found altered structural connectivity of the cortico-basal-thalamo-cortical loop and the limbic system, which are essential for socio-emotional processing \citep{Olson2007,Braun2011}, in preterm-born school age children as compared to term-born controls \citep{Fischi-Gomez2015,Fischi-Gomez2016a}.
+
+The investigation of seed homogeneity by clustering voxels based on their temporal features revealed three spatial subdivisions. This was done in a data-driven way, showing that there is a high level of consistency between neighbouring voxels. It also highlights that the seed itself is not entirely homogeneous and that the effects we found mainly related to the ventral part of the dorsal anterior cingulate cortex. 
 
 Taken  together, the results presented here underline the potential of dynamic analyses to uncover brain function relationships that cannot be examined using traditional static methodologies. The potential to study these dynamic features in combination with behavioural and clinical outcomes proves a compelling direction for future research. 
 
